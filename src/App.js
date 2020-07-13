@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import { Router } from "@reach/router";
 import Login from "./components/Login";
+import Contact from "./components/Contact";
 
 function Home() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Router>
         <Home path="/" />
         <About path="about" />
+        <Contact path="contact" />
         <Login path="/login" />
       </Router>
     </div>

@@ -19,7 +19,9 @@ export default function Header() {
         <li>
           <Link to="/about">About</Link>
         </li>
-        <li>Contact</li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
         <li>
           <button className="border px-4 py-2 rounded-md hover:bg-blue-400 font-bold">
             <Link to="/login"> Sign in</Link>
