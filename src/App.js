@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import { Router } from "@reach/router";
+import Login from "./components/Login";
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Router>
         <Home path="/" />
         <About path="about" />
+        <Login path="/login" />
       </Router>
     </div>
   );

@@ -11,7 +11,9 @@ export default function Header() {
       </div>
 
       <ul className="flex w-5/12 justify-around items-center">
-        <li><Link to="/">Home</Link></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>Alumni</li>
         <li>Donate</li>
         <li>
@@ -20,7 +22,7 @@ export default function Header() {
         <li>Contact</li>
         <li>
           <button className="border px-4 py-2 rounded-md hover:bg-blue-400 font-bold">
-            Sign in
+            <Link to="/login"> Sign in</Link>
           </button>
         </li>
       </ul>
