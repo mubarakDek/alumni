@@ -28,16 +28,17 @@ function Home() {
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-
-      <Router>
-        <Home path="/" />
-        <About path="about" />
-        <Contact path="contact" />
-        <Login path="/login" />
-      </Router>
-    </div>
+      <div className="bg-blue-200">
+        <Router>
+          <Home path="/" />
+          <About path="about" />
+          <Contact path="contact" />
+          <Login path="/login" />
+        </Router>
+      </div>
+    </>
   );
 }
 

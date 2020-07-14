@@ -2,10 +2,7 @@ import React from "react";
 
 export default function Login() {
   return (
-    <div
-      className="flex flex-col bg-blue-100 justify-center items-center"
-      style={{ height: "80vh" }}
-    >
+    <div className="flex flex-col pt-12  justify-center items-center">
       <form className="w-full max-w-sm">
         <div className="md:flex md:flex-col  mb-6">
           <div className="">
@@ -63,7 +60,7 @@ export default function Login() {
           </button>
         </div>
       </form>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-16">
         <span>------- </span>
         <p className="px-4">Or Sign in with</p>
         <span> -------</span>
