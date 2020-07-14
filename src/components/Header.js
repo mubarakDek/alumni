@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "@reach/router";
 
 export default function Header() {
+  let [dropDown, setDropDown] = useState(true);
+
+  console.log(dropDown);
+
   return (
     <header className="bg-primary text-white flex justify-around items-center py-4">
       <div className="logo">
@@ -14,7 +18,38 @@ export default function Header() {
         <li>
           <Link to="/">Home</Link>
         </li>
-        <li>Alumni</li>
+        <li className="relative">
+          <button
+            onClick={() => setDropDown(!dropDown)}
+            className="hover:border  focus:border-blue-800 focus:outline-none focus:shadow-outline"
+          >
+            Alumni
+          </button>
+          <span
+            className="absolute text-lg"
+            style={{ top: "10px", right: "-15px" }}
+          >
+            &#129171;
+          </span>
+          <ul
+            className={`${
+              dropDown ? "hidden" : ""
+            } absolute text-lg bg-gray-100 text-primary p-4`}
+          >
+            <li className="mb-3 px-3 hover:bg-blue-200">
+              <Link to="/news">News</Link>
+            </li>
+            <li className="mb-3 px-3 hover:bg-blue-200">
+              <Link to="/events">Events</Link>
+            </li>
+            <li className="mb-3 px-3 hover:bg-blue-200">
+              <Link to="/board">Board</Link>
+            </li>
+            <li className="mb-3 px-3 hover:bg-blue-200">
+              <Link to="/members">Members</Link>
+            </li>
+          </ul>
+        </li>
         <li>Donate</li>
         <li>
           <Link to="/about">About</Link>
